@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tital {
+    color: #ff528f;
+  }
+
+  .offer {
+    border: 1px solid #ff528f;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .offer-details {
+    margin-top: 30px;
+  }
+
+  .offer-details1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    margin-left: 40px;
+  }
+
+  .offer-details2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    margin-left: 70px;
+  }
+
+  .offer-info {
+    display: flex;
+  }
+
+  .offer-price {
+    display: flex;
+  }
+
+  .radioButton {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .unitName {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .discount {
+    background-color: #ff528f;
+    color: #fff;
+    padding: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .price {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .originalPrice {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: gray;
+  }
+
+  .selectors {
+    margin-top: -30px;
+    padding-left: 100px;
+  }
+
+  .selectors-details1 {
+    display: flex;
+  }
+
+  .selectorSize {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .selectorColor {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+
+  .selectors-details2 {
+    margin-left: -150px;
+  }
+
+  .selectors label {
+    font-size: 13px;
+    font-weight: bold;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+
+  .selectors select {
+    font-size: 13px;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0px 20px;
+  }
+
+  .popular {
+    border-color: #ff528f;
+    position: relative;
+  }
+
+  .most-popular {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #ff528f;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 15px;
+  }
+
+  .footer {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .freeDelivery {
+    color: #ff528f;
+  }
+
+  .addToCart {
+    margin-top: -20px;
+    background-color: #ec1963;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .poweredBy {
+    text-align: right;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <h2 class="tital">YAY! It's BOGO</h2>
+
+    <!-- Section -->
+    <div class="offer">
+      <div class="offer-details">
+        <div class="offer-details1">
+          <div class="offer-info">
+            <input class="radioButton" type="radio" name="offerRadioButton" value="10.00">
+            <h3 class="unitName">1 Unit </h3>
+            <h4 class="discount">10% Off</h4>
+          </div>
+          <div class="offer-price">
+            <h3 class="price">$10.00 USD</h3>
+          </div>
+        </div>
+        <div class="offer-details2">
+          <h5>Standard Price</h5>
+          <del>
+            <h5 class="originalPrice">$24.00 USD</h5>
+          </del>
+        </div>
+      </div>
+      <div class="selectors">
+        <div class="selectors-details1">
+          <h5 class="selectorSize">Size</h5>
+          <h5 class="selectorColor">Color</h5>
+        </div>
+        <div class="selectors-details2">
+          <div>
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+          <div>
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer popular">
+      <div class="offer-details">
+        <div class="offer-details1">
+          <span class="most-popular">MOST POPULAR</span>
+          <div class="offer-info">
+            <input class="radioButton" type="radio" name="offerRadioButton" value="18.00" checked>
+            <h3 class="unitName">2 Unit </h3>
+            <h4 class="discount">20% Off</h4>
+          </div>
+          <div class="offer-price">
+            <h3 class="price">$18.00 USD</h3>
+          </div>
+        </div>
+        <div class="offer-details2">
+          <h5>Standard Price</h5>
+          <del>
+            <h5 class="originalPrice">$24.00 USD</h5>
+          </del>
+        </div>
+      </div>
+      <div class="selectors">
+        <div class="selectors-details1">
+          <h5 class="selectorSize">Size</h5>
+          <h5 class="selectorColor">Color</h5>
+        </div>
+        <div class="selectors-details2">
+          <div>
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+          <div>
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="offer-details">
+        <div class="offer-details1">
+          <div class="offer-info">
+            <input class="radioButton" type="radio" name="offerRadioButton" value="24.00">
+            <h3 class="unitName">3 Unit </h3>
+            <h4 class="discount">30% Off</h4>
+          </div>
+          <div class="offer-price">
+            <h3 class="price">$24.00 USD</h3>
+          </div>
+        </div>
+        <div class="offer-details2">
+          <h5>Standard Price</h5>
+          <del>
+            <h5 class="originalPrice">$24.00 USD</h5>
+          </del>
+        </div>
+      </div>
+      <div class="selectors">
+        <div class="selectors-details1">
+          <h5 class="selectorSize">Size</h5>
+          <h5 class="selectorColor">Color</h5>
+        </div>
+        <div class="selectors-details2">
+          <div>
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+          <div>
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h4 class="freeDelivery">Free Delivery</h4>
+      <h4 class="total">Total: $10.00 USD</h4>
+    </div>
+    <button class="addToCart">+ Add to Cart</button>
+    <p class="poweredBy">@Powered by Shruti shivasharan</p>
+  </div>
+
+  <script>
+    const radioButtons = document.querySelectorAll('input[name="offerRadioButton"]');
+    const totalSpan = document.querySelector('.total');
+
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+        totalSpan.textContent = `Total: $${parseFloat(radio.value).toFixed(2)} USD`;
+      });
+    });
+    const offers = document.querySelectorAll('.offer');
+
+    const hideAllSelectors = () => {
+      offers.forEach(offer => {
+        const selectors = offer.querySelector('.selectors');
+        if (selectors) selectors.style.display = 'none';
+      });
+    };
+
+    hideAllSelectors();
+    offers[1].querySelector('.selectors').style.display = 'block';
+
+    // Show the selectors for the clicked offer
+    radioButtons.forEach((radio, index) => {
+      radio.addEventListener('click', () => {
+        hideAllSelectors();
+        offers[index].querySelector('.selectors').style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+
+</html>
